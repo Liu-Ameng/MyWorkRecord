@@ -13,6 +13,7 @@
 		2329AB8F1989EF2F008DA7FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2329AB8D1989EF2F008DA7FB /* Main.storyboard */; };
 		2329AB911989EF2F008DA7FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2329AB901989EF2F008DA7FB /* Images.xcassets */; };
 		2329AB9D1989EF2F008DA7FB /* MyWorkRecordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2329AB9C1989EF2F008DA7FB /* MyWorkRecordTests.swift */; };
+		23F133671989F1B30017C95B /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F133661989F1B30017C95B /* TaskManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 		2329AB961989EF2F008DA7FB /* MyWorkRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWorkRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2329AB9B1989EF2F008DA7FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2329AB9C1989EF2F008DA7FB /* MyWorkRecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWorkRecordTests.swift; sourceTree = "<group>"; };
+		2345DD2D198A58650043B060 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		23F133661989F1B30017C95B /* TaskManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +83,9 @@
 				2329AB871989EF2F008DA7FB /* AppDelegate.swift */,
 				2329AB891989EF2F008DA7FB /* FirstViewController.swift */,
 				2329AB8B1989EF2F008DA7FB /* SecondViewController.swift */,
+				23F133661989F1B30017C95B /* TaskManager.swift */,
 				2329AB8D1989EF2F008DA7FB /* Main.storyboard */,
+				2345DD2D198A58650043B060 /* MyPlayground.playground */,
 				2329AB901989EF2F008DA7FB /* Images.xcassets */,
 				2329AB851989EF2F008DA7FB /* Supporting Files */,
 			);
@@ -213,6 +218,7 @@
 			files = (
 				2329AB8C1989EF2F008DA7FB /* SecondViewController.swift in Sources */,
 				2329AB881989EF2F008DA7FB /* AppDelegate.swift in Sources */,
+				23F133671989F1B30017C95B /* TaskManager.swift in Sources */,
 				2329AB8A1989EF2F008DA7FB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +409,7 @@
 				2329ABA21989EF2F008DA7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2329ABA31989EF2F008DA7FB /* Build configuration list for PBXNativeTarget "MyWorkRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +418,7 @@
 				2329ABA51989EF2F008DA7FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
