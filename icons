@@ -1,0 +1,147 @@
+//// General Declarations
+CGContextRef context = UIGraphicsGetCurrentContext();
+
+//// Color Declarations
+UIColor* color2 = [UIColor colorWithRed: 0.154 green: 0.874 blue: 0.925 alpha: 0.18];
+UIColor* color3 = [UIColor colorWithRed: 0.328 green: 0.847 blue: 0.885 alpha: 1];
+UIColor* color4 = [UIColor colorWithRed: 0 green: 1 blue: 0.338 alpha: 0.32];
+UIColor* color5 = [UIColor colorWithRed: 0.852 green: 0.948 blue: 0.481 alpha: 0.452];
+UIColor* color7 = [UIColor colorWithRed: 0.23 green: 0.434 blue: 0.819 alpha: 0.505];
+UIColor* color = [UIColor colorWithRed: 0 green: 0 blue: 0 alpha: 1];
+
+//// Shadow Declarations
+UIColor* shadow = [UIColor.lightGrayColor colorWithAlphaComponent: 0.19];
+CGSize shadowOffset = CGSizeMake(3.1, 3.1);
+CGFloat shadowBlurRadius = 5;
+
+//// Rectangle Drawing
+UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(46, 14.5, 171, 190.5)];
+CGContextSaveGState(context);
+CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+[color2 setFill];
+[rectanglePath fill];
+CGContextRestoreGState(context);
+
+[color3 setStroke];
+rectanglePath.lineWidth = 1;
+[rectanglePath stroke];
+
+
+//// Rectangle 4 Drawing
+UIBezierPath* rectangle4Path = [UIBezierPath bezierPathWithRect: CGRectMake(46, 15, 169, 187)];
+[UIColor.whiteColor setFill];
+[rectangle4Path fill];
+[color setStroke];
+rectangle4Path.lineWidth = 0.5;
+[rectangle4Path stroke];
+
+
+//// Rectangle 3 Drawing
+UIBezierPath* rectangle3Path = [UIBezierPath bezierPathWithRect: CGRectMake(46, 16.5, 167.5, 184)];
+[UIColor.whiteColor setFill];
+[rectangle3Path fill];
+[UIColor.blackColor setStroke];
+rectangle3Path.lineWidth = 0.5;
+[rectangle3Path stroke];
+
+
+//// Rectangle 5 Drawing
+UIBezierPath* rectangle5Path = [UIBezierPath bezierPathWithRect: CGRectMake(169, 85, 71, 20)];
+CGContextSaveGState(context);
+CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+[color4 setFill];
+[rectangle5Path fill];
+CGContextRestoreGState(context);
+
+
+
+//// Rectangle 6 Drawing
+UIBezierPath* rectangle6Path = [UIBezierPath bezierPathWithRect: CGRectMake(192, 52, 48, 20)];
+CGContextSaveGState(context);
+CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+[color5 setFill];
+[rectangle6Path fill];
+CGContextRestoreGState(context);
+
+
+
+//// Rectangle 9 Drawing
+UIBezierPath* rectangle9Path = [UIBezierPath bezierPathWithRect: CGRectMake(46, 18, 166, 181)];
+[UIColor.whiteColor setFill];
+[rectangle9Path fill];
+[UIColor.blackColor setStroke];
+rectangle9Path.lineWidth = 0.5;
+[rectangle9Path stroke];
+
+
+//// Rectangle 10 Drawing
+UIBezierPath* rectangle10Path = [UIBezierPath bezierPathWithRect: CGRectMake(46, 19.5, 164.5, 178)];
+[UIColor.whiteColor setFill];
+[rectangle10Path fill];
+[UIColor.blackColor setStroke];
+rectangle10Path.lineWidth = 1;
+[rectangle10Path stroke];
+
+
+//// Rectangle 8 Drawing
+UIBezierPath* rectangle8Path = [UIBezierPath bezierPathWithRect: CGRectMake(186, 146, 54, 20)];
+CGContextSaveGState(context);
+CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+[color7 setFill];
+[rectangle8Path fill];
+CGContextRestoreGState(context);
+
+
+
+//// Rectangle 2 Drawing
+UIBezierPath* rectangle2Path = [UIBezierPath bezierPathWithRect: CGRectMake(46, 19.5, 164.5, 185.5)];
+CGContextSaveGState(context);
+CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, [shadow CGColor]);
+[color3 setFill];
+[rectangle2Path fill];
+CGContextRestoreGState(context);
+
+[color3 setStroke];
+rectangle2Path.lineWidth = 1;
+[rectangle2Path stroke];
+
+
+//// Rectangle 11 Drawing
+UIBezierPath* rectangle11Path = UIBezierPath.bezierPath;
+[rectangle11Path moveToPoint: CGPointMake(62, 76.75)];
+[rectangle11Path addLineToPoint: CGPointMake(69, 85)];
+[rectangle11Path addLineToPoint: CGPointMake(75, 76.75)];
+[rectangle11Path addLineToPoint: CGPointMake(75, 19)];
+[rectangle11Path addLineToPoint: CGPointMake(62, 19)];
+[rectangle11Path addLineToPoint: CGPointMake(62, 76.75)];
+[rectangle11Path closePath];
+rectangle11Path.lineCapStyle = kCGLineCapSquare;
+
+rectangle11Path.lineJoinStyle = kCGLineJoinBevel;
+
+[UIColor.redColor setFill];
+[rectangle11Path fill];
+
+
+//// Text Drawing
+CGRect textRect = CGRectMake(82, 63, 104, 15);
+[UIColor.blackColor setFill];
+[@"Early Bird Diary" drawInRect: textRect withFont: [UIFont fontWithName: @"HelveticaNeue-BoldItalic" size: 12] lineBreakMode: UILineBreakModeWordWrap alignment: UITextAlignmentCenter];
+
+
+//// Rectangle 12 Drawing
+UIBezierPath* rectangle12Path = [UIBezierPath bezierPathWithRect: CGRectMake(85, 99, 113, 41)];
+[UIColor.whiteColor setFill];
+[rectangle12Path fill];
+
+
+//// Text 2 Drawing
+CGRect text2Rect = CGRectMake(85, 102, 49, 15);
+[UIColor.blackColor setFill];
+[@"Name:" drawInRect: text2Rect withFont: [UIFont fontWithName: @"HelveticaNeue-BoldItalic" size: 11.5] lineBreakMode: UILineBreakModeWordWrap alignment: UITextAlignmentCenter];
+
+
+//// Text 3 Drawing
+CGRect text3Rect = CGRectMake(75, 117, 98, 13);
+[UIColor.blackColor setFill];
+[@"Email Address:" drawInRect: text3Rect withFont: [UIFont fontWithName: @"HelveticaNeue-BoldItalic" size: 10] lineBreakMode: UILineBreakModeWordWrap alignment: UITextAlignmentCenter];
