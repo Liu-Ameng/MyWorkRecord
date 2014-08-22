@@ -1,0 +1,37 @@
+//// Color Declarations
+UIColor* color = [UIColor colorWithRed: 0 green: 0.804 blue: 1 alpha: 0.261];
+
+//// Rectangle Drawing
+UIBezierPath* rectanglePath = [UIBezierPath bezierPathWithRect: CGRectMake(60, 6, 106, 106)];
+[UIColor.whiteColor setFill];
+[rectanglePath fill];
+
+
+//// Oval Drawing
+UIBezierPath* ovalPath = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(63, 9, 100, 100)];
+[color setFill];
+[ovalPath fill];
+
+
+//// Oval 2 Drawing
+UIBezierPath* oval2Path = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(69, 15, 88, 88)];
+[color setFill];
+[oval2Path fill];
+
+
+//// Oval 3 Drawing
+UIBezierPath* oval3Path = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(74, 20, 78, 78)];
+[color setFill];
+[oval3Path fill];
+
+
+//// Oval 4 Drawing
+UIBezierPath* oval4Path = [UIBezierPath bezierPathWithOvalInRect: CGRectMake(80, 26, 66, 66)];
+[color setFill];
+[oval4Path fill];
+
+
+//// Text Drawing
+CGRect textRect = CGRectMake(78, 47, 70, 24);
+[UIColor.whiteColor setFill];
+[@"Today!" drawInRect: textRect withFont: [UIFont fontWithName: @"Helvetica-Bold" size: 20] lineBreakMode: UILineBreakModeWordWrap alignment: UITextAlignmentCenter];
